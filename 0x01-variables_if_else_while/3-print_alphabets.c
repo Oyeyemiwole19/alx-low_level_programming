@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Description: prints alphabet in lowercase
+ * Description: prints the alphabet in lowercase
  * and then uppercase
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,7 @@ int main(void)
 		c++;
 	}
 
-	c = 'A'
+	c = 'A';
 		while (c <= 'Z')
 		{
 			putchar(c);
