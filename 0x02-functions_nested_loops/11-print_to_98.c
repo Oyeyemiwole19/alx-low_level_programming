@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - prints natural numbers to 98
- * @a: the integer
- * Return: returns 98
+ * print_to_98 - prints to 98
+ * @n: the start point
  */
 void print_to_98(int n)
 {
