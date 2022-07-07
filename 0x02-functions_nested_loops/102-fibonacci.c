@@ -20,7 +20,7 @@ int main(void)
 		{
 			printf("%ld\n", j);
 		}
-		last = l + k;
+		last = j + k;
 		j = k;
 		k = last;
 	}
