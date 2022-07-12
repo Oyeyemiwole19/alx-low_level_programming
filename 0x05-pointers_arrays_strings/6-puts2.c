@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * puts- prints character of a string
+ * puts2- prints character of a string
  * @str: the string pointer
  * Return: 0
  */
-void puts(char *str)
+void puts2(char *str)
 {
 	int j = 0;
 
@@ -12,7 +12,7 @@ void puts(char *str)
 	{
 		if (j % 2 == 0)
 		{
-			_putchar(str[i]);
+			_putchar(str[j]);
 		}
 		j++;
 	}
