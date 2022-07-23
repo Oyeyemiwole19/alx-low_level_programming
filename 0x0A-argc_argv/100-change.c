@@ -41,4 +41,6 @@ int main(int argc, char *argv[])
 		}
 		i--;
 	}
+	printf("%d\n", i);
+	return (0);
 }
