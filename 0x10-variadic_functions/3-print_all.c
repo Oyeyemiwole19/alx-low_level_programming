@@ -1,8 +1,14 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
 /**
- * print_char- print a char
+ * print_char - print a char
  * @arg: list of argument
  */
 void print_char(va_list arg)
@@ -14,24 +20,25 @@ void print_char(va_list arg)
 }
 /**
  * print_int- print int
- * @arg: list of argument
+ * @arg- list of argument
  */
 void print_int(va_list arg)
 {
-	int i;
+	int num;
 
-	i = va_arg(arg, int);
+	num = va_arg(arg, int);
+	printf("%d", num);
 }
 /**
- * print_float- print float
+ * print_float- prints float
  * @arg: list of argument
  */
 void print_float(va_list arg)
 {
-	float f;
+	float num;
 
-	f = va_arg(arg, double);
-	printf("%f", f);
+	num = va_arg(arg, double);
+	printf("%f", num);
 }
 /**
  * print_string- prints a string
@@ -50,15 +57,13 @@ void print_string(va_list arg)
 	printf("%s", str);
 }
 /**
- * print_all- pritns anything, followed by new line
- * @format: argument type
+ * print-all- prints anything, followed by a new line
+ * @format: represent argument type
  */
 void print_all(const char * const format, ...)
 {
 	va_list args;
-
 	int index = 0, j = 0;
-
 	char *separator = "";
 
 	printer_t funcs[] = {
@@ -83,4 +88,7 @@ void print_all(const char * const format, ...)
 		index++;
 	}
 	printf("\n");
+
+	va_end(args);
 }
+
