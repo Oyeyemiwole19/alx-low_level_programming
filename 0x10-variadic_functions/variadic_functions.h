@@ -5,7 +5,7 @@
 /**
  * struct printer- structure type for printer
  * @s: represent the type
- * print- function to print
+ * @print: function to print
  */
 typedef struct printer
 {
