@@ -57,8 +57,10 @@ void print_string(va_list arg)
 	printf("%s", str);
 }
 /**
- * print-all- prints anything, followed by a new line
+ * print_all- prints anything, follow by a line
  * @format: represent argument type
+ * Description: Argument not of type char, int, float,
+ *              or char * would be ignored
  */
 void print_all(const char * const format, ...)
 {
@@ -88,7 +90,6 @@ void print_all(const char * const format, ...)
 		index++;
 	}
 	printf("\n");
-
 	va_end(args);
 }
 
