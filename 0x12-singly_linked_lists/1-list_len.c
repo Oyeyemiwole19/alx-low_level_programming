@@ -1,17 +1,17 @@
 #include "lists.h"
 /**
- * list_len- adds a new node at the beginning of a list_t list.
- * @h: list list_t
+ * list_len- find the number of elements in a linked list
+ * @h: pointer to the list
  * Return: number of elements in h
  */
 size_t list_len(const list_t *h)
 {
-	size_t s = 0;
+	size_t elements = 0;
 
 	while (h)
 	{
-		s++;
+		elements++;
 		h = h->next;
 	}
-	return (s);
+	return (elements);
 }
