@@ -1,6 +1,6 @@
-#ifndef FILE_LIST
-#define FILE_LIST
-
+#ifndef List_h
+#define LIST_H
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * struct list_s - singly linked list
@@ -11,7 +11,7 @@
  */
 typedef struct list_s
 {
-	char *str;
+	char *s;
 	unsigned int len;
 	struct list_s *next;
 } list_t;
